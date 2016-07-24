@@ -237,10 +237,6 @@ def get_location():
 def landing():
     return render_template('index.html'), 200
 
-@app.route('/signup', methods=['GET', 'POST'])
-def signup():
-    return render_template('signup.html'), 200
-
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=5000)
